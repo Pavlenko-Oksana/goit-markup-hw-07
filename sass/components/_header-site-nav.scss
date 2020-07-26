@@ -35,11 +35,11 @@ color: $accent-color;
 }
 
 .site-nav .item{
-  position: relative;
+ position: relative;
 }
 
 .site-nav .current{
-  color: $accent-color;
+ color: $accent-color;
 }
 
 .site-nav .item:not(:last-child) {
@@ -67,7 +67,6 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-
 color: $secondary-text-color;
 }
 
