@@ -9,16 +9,11 @@
     border-radius: 4px;
     box-sizing: border-box;
     transition: fill 250ms $timing-function, border-color 250ms $timing-function;
-  }
-  
-  .regular-customers-logo:hover,
-  .regular-customers-logo:focus{
-    border-color: $accent-color;
-  }
-  
-  .regular-customers-logo:hover .customers-logo, 
-  .regular-customers-logo:focus .customers-logo{
-    fill: $accent-color;
+
+    &:hover,
+    &:focus{
+      border-color: $accent-color;
+    }
   }
   
   .regular-customers{
@@ -33,4 +28,9 @@
     height: 190px;
     fill: $customers-logo;
     border: 2px;
+
+    .regular-customers-logo:hover &, 
+    .regular-customers-logo:focus &{
+      fill: $accent-color;
+    }
   }

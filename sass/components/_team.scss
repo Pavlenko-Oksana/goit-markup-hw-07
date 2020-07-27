@@ -1,11 +1,11 @@
 .about-team{
  display: flex;
+
+ .item:not(:first-child){
+  margin-left: 30px;
+ }
 }
   
-.about-team .item:not(:first-child){
- margin-left: 30px;
-}
-
 .team-employee{
  height: 422px;
  width: 270px;
@@ -36,15 +36,14 @@ justify-content: center;
  padding-right: 32px;
  display: flex;
 } 
-
-.team-icon-img:not(:last-child){
- margin-right: 10px;
-}
     
 .team-icon-img{
  height: 44px;
  width: 44px;
-  
+
+  &:not(:last-child){
+  margin-right: 10px;
+ }
 }
 
 .team-icon-image{
@@ -65,10 +64,11 @@ width: 44px;
 height: 44px;
 border-radius: 50%; 
 transition: background-color 250ms $timing-function, fill 250ms $timing-function;
-}
-    
-.team-icon-link:hover,
-.team-icon-link:focus{
+
+&:hover,
+&:focus{
 background-color: $accent-color;
 fill: $accent-color-white;
 }
+}
+    

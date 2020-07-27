@@ -47,11 +47,13 @@
  border-radius: 4px;
  padding-left: 42px;
  outline: none;
+
+ &:focus{
+    border: 1px solid #2196F3;
+   }
 }
   
-.form-field-input:focus{
- border: 1px solid #2196F3;
-}
+
   
 .form-field-input:focus + .form-field-lable,
 .form-field-input:not(:placeholder-shown) + .form-field-lable{
@@ -79,10 +81,10 @@
  top: 50%;
  left: 16px;
  transform: translateY(-50%);
-}
-  
-.form-field-input:focus ~ .form-icon{
- fill: $accent-color;
+
+ .form-field-input:focus ~ &{
+    fill: $accent-color;
+   }
 }
   
 .comment-textarea{
@@ -95,10 +97,10 @@
  padding-left: 16px;
  padding-top: 12px;
  outline: none;
-}
-  
-.comment-textarea:focus{
- border: 1px solid #2196F3;
+
+ &:focus{
+    border: 1px solid #2196F3;
+   }
 }
   
 .comment-field{

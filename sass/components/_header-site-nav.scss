@@ -8,30 +8,26 @@
   align-items: center;
 }
 
-.site-nav .link,
-.contacts-nav .link{
- display: block;
- padding-top: 32px;
- padding-bottom: 32px;
- color: $primary-text-color;
- font-weight: 500;
- font-size: 14px;
- line-height: 1.14;
- letter-spacing: 0.02em;
- transition: color 250ms $timing-function;
-}
-
-.site-nav .link:hover, 
-.site-nav .link:focus,
-.contacts-nav .link:focus,
-.contacts-nav .link:hover
-{
-color: $accent-color;
-}
-
 .site-nav{
  display: flex;
  margin-left: 85px;
+
+  & .link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms $timing-function;
+
+   &:hover, 
+   &:focus{
+    color: $accent-color;
+  }
+ }
 }
 
 .site-nav .item{
@@ -44,6 +40,11 @@ color: $accent-color;
 
 .site-nav .item:not(:last-child) {
  margin-right: 50px;
+}
+
+.contacts-nav-icon{
+  margin-right: 10px;
+  fill: $secondary-text-color;
 }
 
 .current::after{
@@ -59,40 +60,54 @@ background-color: $accent-color;
 
 .contacts-nav{
   display: flex;
-}
 
-.contacts-nav .item{
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: $secondary-text-color;
-}
+   .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms $timing-function;
 
-.contacts-nav .item:not(:last-child){
-  margin-right: 30px;
+    &:focus,
+    &:hover{
+    color: $accent-color;
+    }
+   }
+
+   .item{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $secondary-text-color;
+
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+  }
 }
 
 .header-address{
   margin-left: auto;
 }
 
-.contacts-nav-icon{
-  margin-right: 10px;
-}
-
 .contacts-nav .header-mail{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: $secondary-text-color;
 }
 
 .contacts-nav .header-tel{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  color: $secondary-text-color;
 }
 
 .header-mail:hover,

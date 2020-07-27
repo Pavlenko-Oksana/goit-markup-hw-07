@@ -18,17 +18,17 @@
   background: rgba(255, 255, 255, 0.1);
   text-align: center;
   transition: background-color 250ms $timing-function;
+     
+   &:hover, 
+   &:focus{
+    background-color: $accent-color;
+  }
 }
 
 .footer-icons-link:not(:last-child){
- margin-right: 10px;
+  margin-right: 10px;
 }
 
-.footer-icon-link:hover, 
-.footer-icon-link:focus{
- background-color: $accent-color;
-}
-  
 .footer-ikon-img{
  fill: $primary-background-color;
 }

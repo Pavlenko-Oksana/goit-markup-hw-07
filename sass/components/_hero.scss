@@ -18,10 +18,10 @@ margin-left: auto;
 margin-top: 30px;
 outline: none;
 transition: background-color 250ms $timing-function;
-}
 
-.button-hero:hover{
+  &:hover{
   background-color: $accent-color-hover;
+  }
 }
 
 .title-hero-wrapper{

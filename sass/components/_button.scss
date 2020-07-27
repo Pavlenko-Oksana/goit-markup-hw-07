@@ -17,13 +17,15 @@
  padding-right: 22px;
  box-shadow: none;
  transition: background-color 250ms $timing-function;
+
+ &:hover,
+ &:focus{
+  background-color: $accent-color;
+  color: $accent-color-white;
+ }
 }
   
-.button:hover,
-.button:focus{
- background-color: $accent-color;
- color: $accent-color-white;
-}
+
   
 .button-list{
  padding-bottom: 0px;
@@ -32,8 +34,10 @@
 .filter-button{
  display: flex;
  justify-content: center;
+
+  .item:not(:last-child){
+    margin-right: 8px;
+   }
 }
    
-.filter-button .item:not(:last-child){
- margin-right: 8px;
-}
+

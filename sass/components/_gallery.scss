@@ -12,19 +12,19 @@
 .gallery{
  display: flex;
  flex-wrap: wrap;
-}
-  
-.gallery .item{
- width: 370px;
- margin-bottom: 30px;
-}
-  
-.gallery .item:not(:nth-child(3n)){
- margin-right: 30px;
-}
-  
-.gallery .item:nth-last-child(-n+3){
- margin-bottom: 0px;
+
+   & .item{
+    width: 370px;
+    margin-bottom: 30px;
+
+    &:not(:nth-child(3n)){
+        margin-right: 30px;
+    }
+         
+    &:nth-last-child(-n+3){
+        margin-bottom: 0px;
+    }
+   }
 }
   
 .card{
