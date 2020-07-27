@@ -105,7 +105,6 @@ a {
 
 .contacts-nav-icon {
   margin-right: 10px;
-  fill: #757575;
 }
 
 .current::after {
@@ -129,7 +128,7 @@ a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #212121;
+  color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -718,11 +717,12 @@ footer {
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.1);
-          transform: translate(-50%, -50%) scale(0.1);
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal {
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -730,7 +730,6 @@ footer {
   max-height: 581px;
   max-width: 528px;
   border-radius: 4px;
-  position: absolute;
   background-color: #FFFFFF;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,11 +1,11 @@
 .modal{
+ position: absolute;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%) scale(1) ;
  max-height: 581px;
  max-width: 528px;
  border-radius: 4px;
- position: absolute;
  background-color: $primary-background-color;
  transition: transform 250ms $timing-function;
 }
@@ -52,9 +52,7 @@
     border: 1px solid #2196F3;
    }
 }
-  
-
-  
+   
 .form-field-input:focus + .form-field-lable,
 .form-field-input:not(:placeholder-shown) + .form-field-lable{
  transform: translateY(-40px);

@@ -44,7 +44,6 @@
 
 .contacts-nav-icon{
   margin-right: 10px;
-  fill: $secondary-text-color;
 }
 
 .current::after{
@@ -65,7 +64,7 @@ background-color: $accent-color;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: $primary-text-color;
+    color: $secondary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
