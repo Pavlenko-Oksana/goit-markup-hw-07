@@ -60,17 +60,21 @@
  letter-spacing: 0.06em;
  color: #212121;
  padding-left: 24px;
-}
-  
-.section-name{
- margin-top: 0;
  margin-bottom: 4px;
  text-align: left;
+ margin-top: 20px;
 }
    
 .product-card{
  position: relative;
  overflow: hidden;
+}
+
+.product-card-img{
+ display: block;
+ max-width: 100%;
+ height: auto;
+ 
 }
   
 .section-paragraph{
@@ -93,9 +97,6 @@
  right: 0;
  color: #FFFFFF; 
  font-family: $default-font;
- font-weight: 400;
- font-size: 18px;
- line-height: 1.5;
  background-color:rgba(33, 150, 243, 0.9); 
  margin-top: 0;
  margin-bottom: 0;
